@@ -1,5 +1,5 @@
 {:deps {org.clojure/clojure {:mvn/version "1.10.1"}
-        org.clojure/tools.logging {:mvn/version "1.10.1"}
+        org.clojure/tools.logging {:mvn/version "1.1.0"}
         io.replikativ/konserve {:mvn/version "0.5.1"}
         io.replikativ/superv.async {:mvn/version "0.2.9"}
         software.amazon.awssdk/s3 {:mvn/version "2.13.41"}
