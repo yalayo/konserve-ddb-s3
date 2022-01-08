@@ -1,0 +1,8 @@
+{:deps {org.clojure/clojure {:mvn/version "1.10.1"}
+        org.clojure/tools.logging {:mvn/version "1.10.1"}
+        io.replikativ/konserve {:mvn/version "0.5.1"}
+        io.replikativ/superv.async {:mvn/version "0.2.9"}
+        software.amazon.awssdk/s3 {:mvn/version "2.13.41"}
+        software.amazon.awssdk/dynamodb {:mvn/version "2.13.41"}
+        org.lz4/lz4-java {:mvn/version "1.6.0"}
+        }}
