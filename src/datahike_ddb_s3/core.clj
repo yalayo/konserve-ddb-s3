@@ -1,10 +1,12 @@
 (ns datahike-ddb-s3.core
   (:require [datahike.store :refer [empty-store delete-store connect-store scheme->index default-config]]
+            [hitchhiker.tree.bootstrap.konserve :as kons]
             [konserve-ddb-s3.core :as ds]
             [superv.async :refer [<?? S]]))
 
 (defmethod empty-store :ddb-s3 [config]
-  (<?? S (ds/empty-store config)))
+  (kons/add-hitchhiker-tree-handlers
+   (<?? S (ds/empty-store config))))
 
 (defmethod delete-store :ddb-s3 [config]
   (ds/delete-store config))
