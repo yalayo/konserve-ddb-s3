@@ -10,7 +10,7 @@
   (ds/delete-store config))
 
 (defmethod connect-store :ddb-s3 [config]
-  (ds/connect-store config))
+  (<?? S (ds/connect-store config)))
 
 (defmethod scheme->index :ddb-s3 [_]
   :datahike.index/hitchhiker-tree)
